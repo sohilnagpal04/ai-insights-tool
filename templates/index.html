@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI Business Insights Tool</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"/>
+</head>
+<body>
+  <div class="container">
+
+    <header>
+      <h1>📊 AI Business Insights</h1>
+      <p class="subtitle">Upload a CSV file — get instant AI-powered business analysis</p>
+    </header>
+
+    <section class="upload-card">
+      <form method="POST" enctype="multipart/form-data">
+        <label for="csv_file" class="file-label">
+          <span>Choose CSV file</span>
+          <input type="file" name="csv_file" id="csv_file" accept=".csv" required />
+        </label>
+        <button type="submit" class="btn-analyse">Analyse Data</button>
+      </form>
+      {% if filename %}
+        <p class="file-info">📁 Analysing: <strong>{{ filename }}</strong></p>
+      {% endif %}
+    </section>
+
+    {% if error %}
+    <div class="alert error">⚠️ {{ error }}</div>
+    {% endif %}
+
+    {% if insights and summary %}
+    <div class="results">
+
+      <!-- Dataset Overview -->
+      <section class="card">
+        <h2>📋 Dataset Overview</h2>
+        <div class="stats-grid">
+          <div class="stat">
+            <span class="stat-value">{{ summary.row_count }}</span>
+            <span class="stat-label">Rows</span>
+          </div>
+          <div class="stat">
+            <span class="stat-value">{{ summary.column_count }}</span>
+            <span class="stat-label">Columns</span>
+          </div>
+          <div class="stat">
+            <span class="stat-value">{{ summary.anomaly_count }}</span>
+            <span class="stat-label">Anomalies Detected</span>
+          </div>
+          <div class="stat">
+            <span class="stat-value">{{ summary.missing_values | length }}</span>
+            <span class="stat-label">Columns with Missing Data</span>
+          </div>
+        </div>
+        <div class="columns-list">
+          <strong>Columns:</strong>
+          {% for col in summary.columns %}
+            <span class="tag">{{ col }}</span>
+          {% endfor %}
+        </div>
+      </section>
+
+      <!-- Executive Summary -->
+      <section class="card highlight">
+        <h2>🧠 Executive Summary</h2>
+        <p>{{ insights.executive_summary }}</p>
+      </section>
+
+      <!-- Key Insights -->
+      <section class="card">
+        <h2>💡 Key Insights</h2>
+        <div class="insights-grid">
+          {% for item in insights.insights %}
+          <div class="insight-item">
+            <h3>{{ item.title }}</h3>
+            <p>{{ item.detail }}</p>
+          </div>
+          {% endfor %}
+        </div>
+      </section>
+
+      <!-- Anomalies -->
+      <section class="card">
+        <h2>⚠️ Anomalies & Data Quality</h2>
+        <p>{{ insights.anomalies }}</p>
+        {% if summary.anomaly_sample %}
+        <details>
+          <summary>Show anomalous rows ({{ summary.anomaly_count }} total)</summary>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  {% for col in summary.columns %}
+                  <th>{{ col }}</th>
+                  {% endfor %}
+                </tr>
+              </thead>
+              <tbody>
+                {% for row in summary.anomaly_sample %}
+                <tr>
+                  {% for col in summary.columns %}
+                  <td>{{ row.get(col, '') }}</td>
+                  {% endfor %}
+                </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
+        </details>
+        {% endif %}
+      </section>
+
+      <!-- Strategic Recommendation -->
+      <section class="card recommendation">
+        <h2>🎯 Strategic Recommendation</h2>
+        <p>{{ insights.recommendation }}</p>
+      </section>
+
+      {% if summary.top_correlations %}
+      <!-- Correlations -->
+      <section class="card">
+        <h2>🔗 Top Correlations</h2>
+        <ul>
+          {% for c in summary.top_correlations %}
+          <li><strong>{{ c.columns }}</strong> — correlation: {{ c.correlation }}</li>
+          {% endfor %}
+        </ul>
+      </section>
+      {% endif %}
+
+    </div>
+    {% endif %}
+
+  </div>
+</body>
+</html>
