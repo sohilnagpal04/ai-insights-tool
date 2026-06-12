@@ -19,20 +19,28 @@ def analyse_csv(df: pd.DataFrame):
         summary["numeric_summary"] = desc.to_dict()
 
         if numeric_df.shape[1] > 1:
-            corr = numeric_df.corr().abs()
-            upper = corr.where(np.triu(np.ones(corr.shape), k=1).astype(bool))
-            top_corr = upper.stack().sort_values(ascending=False).head(3)
+            corr = numeric_df.corr()
+            upper_mask = np.triu(np.ones(corr.shape), k=1).astype(bool)
+            pairs = corr.where(upper_mask).stack()          # preserves sign
+            top_pairs = pairs.abs().sort_values(ascending=False).head(5)
             summary["top_correlations"] = [
-                {"columns": f"{a} & {b}", "correlation": round(float(v), 3)}
-                for (a, b), v in top_corr.items()
-                if not math.isnan(float(v))
+                {"columns": f"{a} & {b}", "correlation": round(float(pairs.loc[(a, b)]), 3)}
+                for (a, b) in top_pairs.index
+                if not math.isnan(float(pairs.loc[(a, b)]))
             ]
 
+    # Only treat object columns as categorical if they have low cardinality
     cat_df = df.select_dtypes(include="object")
     cat_summary = {}
-    for col in cat_df.columns[:5]:
-        top = df[col].value_counts().head(5).to_dict()
+    for col in cat_df.columns:
+        n_unique = df[col].nunique()
+        # Skip IDs, free text, dates (too many unique values)
+        if n_unique / max(len(df), 1) > 0.4:
+            continue
+        top = df[col].value_counts().head(6).to_dict()
         cat_summary[col] = {str(k): int(v) for k, v in top.items()}
+        if len(cat_summary) >= 6:
+            break
     if cat_summary:
         summary["categorical_summary"] = cat_summary
 

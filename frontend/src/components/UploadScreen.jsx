@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react';
-import { UploadCloud, Sparkles, FileText, AlertCircle, Users, Handshake, Building2 } from 'lucide-react';
+import { UploadCloud, Sparkles, FileText, AlertCircle, Users, Handshake, Building2, BarChart2, ShoppingCart } from 'lucide-react';
 
 const HUBSPOT_OBJECTS = [
   { id: 'contacts',  label: 'Contacts',  icon: Users,      desc: 'Leads, lifecycle stage, emails' },
@@ -40,12 +40,12 @@ export default function UploadScreen({ onSessionReady }) {
     }
   }
 
-  async function loadSample() {
+  async function loadSample(name) {
     setError(null);
     setLoading(true);
-    setLoadingSource('sample');
+    setLoadingSource(name);
     try {
-      const res = await fetch('/api/sample');
+      const res = await fetch(`/api/sample/${name}`);
       if (!res.ok) throw new Error('Could not load sample data');
       onSessionReady(await res.json());
     } catch (e) {
@@ -172,17 +172,30 @@ export default function UploadScreen({ onSessionReady }) {
         </div>
       </div>
 
-      {/* Sample data */}
-      <button
-        onClick={loadSample}
-        disabled={loading}
-        className="mt-6 flex items-center gap-2 btn-ghost"
-      >
-        {loadingSource === 'sample'
-          ? <div className="w-4 h-4 border-2 border-slate-400 border-t-transparent rounded-full animate-spin" />
-          : <FileText size={15} />}
-        Try with sample sales data
-      </button>
+      {/* Sample datasets */}
+      <div className="mt-6 flex items-center gap-3">
+        <button
+          onClick={() => !loading && loadSample('marketing')}
+          disabled={loading}
+          className="flex items-center gap-2 btn-ghost"
+        >
+          {loadingSource === 'marketing'
+            ? <div className="w-4 h-4 border-2 border-slate-400 border-t-transparent rounded-full animate-spin" />
+            : <BarChart2 size={15} />}
+          Marketing Analytics sample
+        </button>
+        <span className="text-slate-700">·</span>
+        <button
+          onClick={() => !loading && loadSample('sales')}
+          disabled={loading}
+          className="flex items-center gap-2 btn-ghost"
+        >
+          {loadingSource === 'sales'
+            ? <div className="w-4 h-4 border-2 border-slate-400 border-t-transparent rounded-full animate-spin" />
+            : <ShoppingCart size={15} />}
+          Sales sample
+        </button>
+      </div>
     </div>
   );
 }

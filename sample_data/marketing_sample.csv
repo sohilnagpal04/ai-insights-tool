@@ -1,0 +1,401 @@
+date,campaign,channel,country,industry,plan,impressions,clicks,spend,cpc,ctr_pct,leads,conversions,conversion_rate_pct,revenue,satisfaction_score,churn_risk_pct
+2024-12-02,Social Media,Google,United States,Healthcare,Enterprise,11378,553,6146.79,11.1,4.86,435,37,8.58,39922.65,5.0,5.6
+2024-01-16,Email,Organic,United States,Retail,Growth,36523,1618,3738.44,2.31,4.43,369,105,28.54,22121.08,4.0,16.9
+2024-11-12,Email,Google,United Kingdom,Retail,Enterprise,8417,468,3507.32,7.48,5.56,261,46,17.81,44612.63,4.9,9.7
+2024-10-30,Display,Organic,United Kingdom,Technology,Starter,41111,444,3283.05,7.39,1.08,315,32,10.28,1408.11,3.2,43.1
+2024-01-04,Display,LinkedIn,United States,Finance,Growth,19328,1382,4354.14,3.15,7.15,447,61,13.85,12005.17,3.8,15.4
+2024-08-23,Email,Instagram,Singapore,Retail,Enterprise,10191,426,3354.5,7.86,4.18,170,49,29.15,44553.03,4.8,1.1
+2024-12-19,Social Media,Google,Canada,Technology,Starter,37647,704,3598.28,5.11,1.87,512,121,23.65,5499.45,3.2,32.9
+2024-11-20,Email,Organic,Singapore,Finance,Growth,3148,255,2938.58,11.52,8.1,228,17,7.57,3178.63,3.9,26.1
+2024-12-01,Email,Facebook,Canada,Retail,Enterprise,9686,1082,6127.04,5.66,11.17,469,97,20.88,103548.86,4.8,0.0
+2024-03-18,Display,Google,Canada,Retail,Enterprise,43209,700,2562.0,3.66,1.62,268,34,12.76,34243.5,5.0,5.3
+2024-02-09,Email,Organic,Singapore,Education,Growth,5705,554,3809.15,6.87,9.71,638,103,16.24,23232.03,3.6,22.3
+2024-08-31,Referral,Facebook,Australia,Retail,Starter,5453,644,6525.54,10.13,11.81,274,57,21.15,2412.31,2.9,18.3
+2024-09-25,Referral,Organic,United States,Healthcare,Growth,15577,1483,7359.91,4.96,9.52,1041,65,6.31,13850.93,3.6,34.2
+2024-10-12,Display,Instagram,United Kingdom,Education,Starter,15156,388,2800.22,7.2,2.56,133,38,29.19,2037.9,2.8,50.8
+2024-02-13,Social Media,Organic,Canada,Healthcare,Starter,5925,541,5426.91,10.03,9.13,771,140,18.16,7382.11,2.9,45.5
+2024-07-04,Social Media,Facebook,United States,Healthcare,Growth,,141,1697.64,12.0,2.7,97,23,24.7,4703.74,3.2,32.8
+2024-09-26,Email,Instagram,Singapore,Finance,Enterprise,13057,1324,3138.41,2.37,10.14,223,56,25.23,50793.72,4.0,23.1
+2024-12-12,Paid Search,LinkedIn,Singapore,Healthcare,Enterprise,54517,1979,6313.64,3.19,3.63,814,200,24.61,233044.93,4.6,19.3
+2024-10-19,Display,LinkedIn,United Kingdom,Retail,Enterprise,3713,371,4314.19,11.61,9.99,494,41,8.46,38399.11,3.9,9.4
+2024-10-10,Email,Organic,Australia,Healthcare,Starter,15419,1690,6152.31,3.64,10.96,477,76,15.94,4398.96,3.3,42.6
+2024-06-27,Email,LinkedIn,Australia,Retail,Enterprise,33157,630,3116.9,4.94,1.9,198,25,12.97,22094.86,4.3,6.9
+2024-03-15,Paid Search,Google,United Kingdom,Retail,Enterprise,11753,724,6682.66,9.23,6.16,775,214,27.65,183140.07,4.4,16.4
+2024-11-07,Referral,LinkedIn,Australia,Healthcare,Starter,43185,2427,2548.98,1.05,5.62,290,47,16.43,2046.91,3.6,21.9
+2024-01-09,Referral,Organic,United States,Finance,Growth,12821,468,3548.06,7.57,3.65,390,84,21.61,14709.49,3.9,21.5
+2024-09-26,Referral,Organic,Singapore,Education,Starter,6871,549,3245.54,5.91,7.99,576,65,11.34,2725.36,3.3,26.9
+2024-12-02,Email,Organic,United Kingdom,Finance,Starter,8314,671,2947.93,4.39,8.07,470,103,22.12,6022.52,2.9,42.7
+2024-03-10,Email,LinkedIn,Australia,Healthcare,Starter,13287,194,541.69,2.79,1.46,68,12,17.88,703.36,2.9,40.4
+2024-11-27,Paid Search,Instagram,United Kingdom,Technology,Enterprise,28613,1445,2789.01,1.93,5.05,217,51,23.58,59259.96,3.6,42.1
+2024-09-11,Display,Instagram,Singapore,Healthcare,Starter,54560,4163,5871.23,1.41,7.63,434,80,18.64,3772.7,3.7,31.7
+2024-06-05,Display,Organic,Canada,Finance,Enterprise,7219,649,3662.49,5.64,8.99,620,126,20.37,126154.6,3.9,11.1
+2024-01-30,Email,LinkedIn,United Kingdom,Education,Enterprise,18638,479,5499.4,11.46,2.57,536,131,24.53,112832.59,5.0,5.7
+2024-07-06,Social Media,LinkedIn,Singapore,Technology,Enterprise,4842,246,1396.82,5.67,5.08,116,8,6.92,7178.36,4.2,21.2
+2024-05-22,Paid Search,Google,Australia,Finance,Growth,16695,384,4238.41,11.01,2.3,561,126,22.6,23195.95,3.3,26.0
+2024-09-08,Paid Search,Google,United States,Technology,Growth,1478,177,1546.72,8.7,11.97,210,61,29.19,14509.76,3.5,19.1
+2024-10-08,Referral,Instagram,United Kingdom,Finance,Enterprise,22945,670,5734.6,,2.92,276,29,10.61,34614.45,4.5,4.3
+2024-09-09,Email,Instagram,Singapore,Education,Growth,13374,325,3845.77,11.8,2.43,298,19,6.64,3740.76,3.7,17.1
+2024-07-29,Display,Organic,Australia,Finance,Growth,10825,918,5210.24,5.67,8.48,528,142,26.95,31736.33,3.6,24.1
+2024-03-07,Display,Organic,Australia,Technology,Enterprise,12813,583,1393.52,2.39,4.55,202,27,13.65,31809.7,5.0,0.0
+2024-05-08,Paid Search,Organic,United Kingdom,Finance,Enterprise,5911,386,2562.03,6.63,6.53,205,58,28.54,52377.71,4.1,7.3
+2024-11-05,Social Media,Organic,Australia,Technology,Starter,953,70,554.6,7.88,7.34,76,18,24.17,878.3,2.9,34.8
+2024-11-17,Referral,Instagram,United Kingdom,Retail,Starter,18079,772,6476.57,8.38,4.27,207,13,6.5,639.46,2.9,42.5
+2024-11-06,Paid Search,Instagram,United Kingdom,Healthcare,Growth,3565,256,1219.98,4.76,7.18,55,9,16.66,1690.01,3.8,27.6
+2024-05-28,Display,Organic,Canada,Finance,Starter,6517,582,6545.13,11.24,8.93,541,48,8.98,2819.08,2.4,55.4
+2024-09-11,Email,Google,Canada,Education,Growth,53401,2606,7740.16,2.97,4.88,443,76,17.37,17525.98,3.5,22.6
+2024-10-01,Email,Google,Canada,Finance,Growth,12584,633,5874.56,9.28,5.03,550,105,19.26,19184.31,3.7,25.0
+2024-09-15,Display,Organic,United Kingdom,Education,Enterprise,121747,2508,4966.14,1.98,2.06,520,154,29.67,160806.17,4.3,17.3
+2024-11-04,Referral,LinkedIn,Singapore,Technology,Starter,579,57,503.53,8.71,9.84,45,3,8.72,170.9,3.8,38.3
+2024-06-12,Paid Search,LinkedIn,Singapore,Healthcare,Enterprise,4096,281,2823.71,10.03,6.86,300,37,12.49,41971.93,4.0,28.8
+2024-08-01,Referral,Instagram,Australia,Education,Growth,2412,282,2271.14,8.04,11.69,137,14,10.69,2418.18,3.3,35.2
+2024-11-13,Display,Facebook,United States,Technology,Enterprise,,4315,7596.0,1.76,1.21,445,39,8.79,42532.75,3.8,31.4
+2024-08-29,Email,Facebook,Singapore,Finance,Enterprise,4955,336,2735.39,8.12,6.78,160,14,9.33,16353.04,4.2,22.3
+2024-12-14,Social Media,Organic,Canada,Finance,Starter,5316,604,2376.25,3.93,11.36,422,102,24.28,5481.38,3.0,31.4
+2024-09-02,Social Media,Organic,United Kingdom,Healthcare,Starter,6377,692,53545.27,6.75,10.85,501,68,13.63,121647.26,3.3,35.9
+2024-02-10,Social Media,LinkedIn,United Kingdom,Retail,Starter,2353,265,1776.13,6.69,11.26,186,15,8.43,783.13,2.9,38.9
+2024-12-08,Referral,Facebook,United States,Technology,Starter,18530,391,3423.75,8.75,2.11,313,16,5.13,817.42,3.6,24.5
+2024-08-31,Display,Facebook,United Kingdom,Healthcare,Growth,,478,5238.0,10.94,1.98,405,74,18.38,16244.12,4.6,1.1
+2024-03-30,Display,Facebook,Australia,Retail,Growth,1707,181,1653.23,9.11,10.6,93,5,5.94,949.67,3.1,26.9
+2024-06-20,Social Media,LinkedIn,Singapore,Education,Growth,53404,3498,7136.23,2.04,6.55,485,122,25.22,23446.22,3.7,14.5
+2024-04-05,Email,Instagram,United Kingdom,Education,Enterprise,23253,2423,6106.81,2.52,10.42,477,122,25.67,125576.78,4.9,8.2
+2024-04-04,Paid Search,LinkedIn,United Kingdom,Finance,Starter,7481,695,2234.13,3.21,9.29,285,35,12.55,1891.66,3.8,24.8
+2024-12-20,Paid Search,Google,Australia,Retail,Growth,1542,172,1445.79,8.39,11.15,208,50,24.25,10861.44,3.2,21.4
+2024-07-07,Referral,Facebook,United States,Finance,Growth,1997,153,1394.85,9.1,7.66,91,17,18.73,3433.03,3.2,33.2
+2024-04-21,Paid Search,Organic,Australia,Education,Growth,8349,926,4319.75,4.66,11.09,317,81,25.72,18794.93,3.9,31.5
+2024-03-25,Social Media,Organic,Canada,Technology,Enterprise,12450,249,1802.13,7.21,2.0,218,54,25.22,54415.4,4.0,19.3
+2024-01-30,Referral,LinkedIn,United Kingdom,Technology,Growth,121235,4122,2184.77,0.53,3.4,110,17,15.59,3704.84,3.7,25.3
+2024-02-05,Display,Google,United Kingdom,Retail,Starter,5654,665,6197.98,9.31,11.76,738,114,15.51,6689.23,2.6,58.9
+2024-07-12,Display,Google,Singapore,Finance,Enterprise,31166,3715,6910.24,1.86,11.92,641,52,8.18,61950.77,4.7,0.0
+2024-06-01,Display,Organic,Canada,Education,Growth,41081,1976,6622.21,3.35,4.81,616,175,28.44,38438.39,4.4,21.5
+2024-08-02,Referral,Google,United States,Finance,Starter,14617,1108,986.99,0.89,7.58,123,7,6.22,380.45,3.0,43.4
+2024-04-21,Email,Facebook,Singapore,Healthcare,Starter,16319,736,6563.13,8.91,4.51,518,112,21.81,5280.73,3.1,42.2
+2024-12-04,Referral,Facebook,Canada,Healthcare,Growth,552,59,675.47,11.41,10.68,68,14,20.65,2784.66,2.7,46.6
+2024-11-25,Display,Organic,United Kingdom,Retail,Growth,3032,282,1363.9,4.83,9.3,159,41,26.23,7793.95,3.6,14.0
+2024-01-30,Referral,LinkedIn,Canada,Education,Enterprise,11666,378,1245.92,3.29,3.24,125,35,28.06,40087.26,4.9,9.1
+2024-04-07,Email,Instagram,Canada,Education,Enterprise,3847,379,508.47,1.34,9.85,30,6,21.79,5550.18,4.6,24.9
+2024-06-04,Email,Facebook,United States,Technology,Enterprise,36239,1330,7996.66,6.01,3.67,635,64,10.11,74823.93,3.7,21.6
+2024-07-13,Display,Organic,United Kingdom,Healthcare,Growth,4600,282,3005.23,10.65,6.13,469,108,23.06,23997.33,3.7,30.9
+2024-06-09,Display,Google,Singapore,Finance,Enterprise,3386,382,1338.2,3.5,11.28,150,23,15.44,20756.13,4.2,22.9
+2024-05-05,Display,Organic,United Kingdom,Healthcare,Growth,15343,982,7738.76,7.88,6.4,620,154,24.87,27864.66,3.7,16.9
+2024-10-04,Email,Organic,Australia,Technology,Enterprise,40398,1014,,0.57,2.51,78,5,6.7,4509.79,4.5,18.7
+2024-01-31,Referral,Organic,Canada,Retail,Starter,3185,36,251.58,6.84,1.13,31,3,11.87,175.24,3.9,23.6
+2024-12-11,Display,Facebook,Australia,Technology,Enterprise,7393,502,1361.4,2.71,6.79,128,14,11.68,13830.95,4.1,23.8
+2024-10-16,Paid Search,Facebook,United Kingdom,Technology,Enterprise,73703,995,7935.06,7.97,1.35,517,74,14.43,75153.3,4.0,10.6
+2024-02-12,Display,LinkedIn,United Kingdom,Education,Starter,18356,648,7179.37,11.07,3.53,885,197,22.31,10119.96,3.1,56.0
+2024-12-16,Social Media,Organic,Singapore,Technology,Starter,15595,1806,7444.38,4.12,11.58,971,231,23.81,12444.66,3.1,39.9
+2024-03-24,Referral,Facebook,Singapore,Retail,Enterprise,17916,1668,7192.9,4.31,9.31,331,98,29.71,108030.67,3.3,33.9
+2024-01-28,Email,LinkedIn,United States,Technology,Growth,8609,650,4920.32,7.56,7.55,636,83,13.16,17705.28,3.9,13.4
+2024-04-26,Social Media,Organic,Canada,Retail,Starter,35000,679,73524.37,8.1,1.94,738,184,24.95,130764.04,3.4,34.3
+2024-12-30,Paid Search,LinkedIn,United Kingdom,Healthcare,Starter,1358,80,913.86,11.34,5.89,101,7,7.56,302.03,2.7,50.3
+2024-09-19,Display,Google,Australia,Technology,Growth,6375,614,4522.91,7.36,9.63,641,34,5.31,6731.04,3.9,9.4
+2024-10-13,Paid Search,Organic,Singapore,Finance,Enterprise,35011,1509,3169.71,2.1,4.31,377,24,6.58,24027.23,4.0,24.4
+2024-02-09,Social Media,Instagram,United States,Retail,Enterprise,34859,868,5010.02,5.77,2.49,142,21,14.89,24011.82,3.8,34.9
+2024-08-13,Social Media,LinkedIn,Singapore,Finance,Growth,7383,237,2701.19,,3.21,193,56,29.11,13250.82,3.6,39.9
+2024-09-08,Referral,Facebook,United Kingdom,Retail,Growth,58133,1308,6568.66,5.02,2.25,503,99,19.81,20508.15,3.6,18.8
+2024-08-24,Paid Search,LinkedIn,United Kingdom,Technology,Growth,59907,2594,5449.23,2.1,4.33,360,31,8.85,6157.25,3.5,36.1
+2024-11-02,Display,Organic,Canada,Education,Enterprise,12589,705,7403.27,10.5,5.6,476,139,29.21,152132.22,4.6,0.0
+2024-02-13,Email,Facebook,United Kingdom,Finance,Enterprise,8802,713,4978.89,6.98,8.1,411,119,29.17,114846.04,4.5,6.4
+2024-02-20,Social Media,Facebook,Singapore,Education,Enterprise,11254,664,4728.04,7.12,5.9,303,73,24.31,77011.38,4.0,20.0
+2024-01-13,Display,Google,United Kingdom,Retail,Starter,3789,97,1105.34,11.32,2.56,93,15,16.38,677.97,2.7,47.0
+2024-08-12,Display,Instagram,Australia,Healthcare,Starter,34642,3582,6519.45,1.82,10.34,419,91,21.93,4046.65,3.5,29.4
+2024-03-30,Referral,Facebook,United Kingdom,Education,Growth,44340,2421,7676.01,3.17,5.46,378,79,21.01,15740.61,4.3,16.0
+2024-04-11,Display,Organic,Canada,Retail,Starter,21379,1984,5696.94,2.87,9.28,894,58,6.56,2516.91,3.4,28.3
+2024-06-15,Paid Search,LinkedIn,Australia,Healthcare,Enterprise,13125,1054,6928.57,6.57,8.03,668,135,20.28,142343.49,4.0,32.6
+2024-11-12,Paid Search,Instagram,Singapore,Education,Starter,36657,1327,5442.46,4.1,3.62,188,26,14.33,1145.93,2.8,50.9
+2024-10-21,Display,LinkedIn,United States,Retail,Enterprise,3523,396,4391.56,11.07,11.24,260,23,9.17,21853.24,4.7,20.2
+2024-11-13,Email,Instagram,Australia,Retail,Starter,4874,350,1722.0,4.92,7.18,111,16,15.23,801.33,3.1,29.6
+2024-03-26,Email,Organic,Australia,Finance,Growth,3516,147,455.02,3.09,4.18,69,13,19.14,2898.45,3.3,34.3
+2024-10-20,Email,Instagram,Singapore,Healthcare,Enterprise,75768,6751,6616.37,0.98,8.91,387,115,29.74,101770.39,4.7,0.0
+2024-06-01,Email,LinkedIn,United Kingdom,Healthcare,Starter,3179,303,3624.75,11.93,9.53,235,59,25.27,3052.24,2.8,54.2
+2024-11-19,Display,Facebook,Singapore,Finance,Starter,9215,670,6545.53,9.76,7.27,486,96,19.92,4275.62,3.5,29.1
+2024-10-20,Social Media,Organic,Australia,Finance,Growth,5863,618,7366.4,11.91,10.54,554,147,26.65,27421.38,3.6,13.4
+2024-12-12,Display,LinkedIn,United States,Education,Enterprise,7303,436,2295.99,5.26,5.97,229,61,27.0,53783.74,4.1,17.4
+2024-07-07,Display,LinkedIn,United Kingdom,Education,Starter,33712,681,6977.48,10.24,2.02,903,188,20.87,10078.4,3.6,16.5
+2024-07-22,Paid Search,LinkedIn,United States,Retail,Growth,10284,722,2718.35,3.76,7.02,150,39,26.31,8738.16,4.3,5.6
+2024-01-24,Email,LinkedIn,Australia,Technology,Starter,61880,7141,3642.03,0.51,11.54,225,49,22.21,2151.7,3.1,34.2
+2024-05-20,Email,Instagram,United Kingdom,Technology,Growth,43057,676,5383.17,7.96,1.57,339,78,23.15,17296.65,3.6,29.5
+2024-02-18,Email,Facebook,Canada,Technology,Starter,12644,746,4830.7,6.47,5.9,176,23,13.59,1005.52,3.6,18.5
+2024-09-01,Email,Facebook,Canada,Technology,Enterprise,76150,3838,6486.46,1.69,5.04,373,54,14.57,61211.38,4.8,0.0
+2024-12-12,Paid Search,Google,Singapore,Education,Starter,42695,2075,4960.49,2.39,4.86,367,87,23.71,4996.08,2.9,36.2
+2024-04-21,Email,Google,United States,Technology,Enterprise,22692,1298,5894.07,4.54,5.72,791,88,11.19,94559.66,4.4,22.8
+2024-11-07,Social Media,Google,United Kingdom,Finance,Enterprise,34783,1847,4934.03,2.67,5.31,588,144,24.6,162244.01,4.4,19.9
+2024-05-03,Display,Organic,Australia,Education,Starter,28653,702,7897.68,11.24,2.45,1289,247,19.21,11835.46,2.9,29.6
+2024-02-07,Email,Organic,Australia,Technology,Growth,1477,169,1882.79,11.11,11.44,202,24,12.16,5250.83,3.8,15.7
+2024-07-24,Email,Organic,Singapore,Education,Starter,8791,582,2364.25,4.06,6.62,199,50,25.2,2542.45,2.8,51.2
+2024-11-28,Email,Instagram,Canada,Finance,Starter,8289,189,2106.94,11.13,2.28,131,8,6.38,424.59,3.1,33.8
+2024-01-07,Paid Search,Google,United States,Retail,Growth,5039,450,4279.44,9.5,8.93,296,24,8.17,5365.33,3.7,42.6
+2024-01-16,Social Media,LinkedIn,United Kingdom,Education,Starter,2430,192,2251.01,11.71,7.9,197,35,17.77,1491.03,3.4,28.3
+2024-03-21,Social Media,Google,Singapore,Technology,Starter,107933,11279,5978.08,0.53,10.45,318,19,6.15,909.95,3.4,29.6
+2024-01-19,Referral,LinkedIn,United States,Healthcare,Starter,9849,392,3446.8,8.78,3.98,175,25,14.32,1256.5,3.4,29.1
+2024-09-21,Email,LinkedIn,Australia,Retail,Growth,78512,1531,6233.51,,1.95,524,74,14.22,14020.01,3.9,9.2
+2024-05-04,Display,Instagram,Singapore,Retail,Starter,8913,870,5913.21,6.79,9.76,215,60,28.31,2523.6,2.7,43.1
+2024-12-21,Email,Instagram,Australia,Retail,Enterprise,50571,3454,5872.28,1.7,6.83,242,41,17.3,35673.78,5.0,0.0
+2024-02-17,Email,Facebook,Singapore,Retail,Enterprise,13488,1245,7185.51,5.77,9.23,559,98,17.64,105051.34,4.0,26.6
+2024-02-01,Display,Facebook,United States,Healthcare,Growth,11522,613,6837.13,11.15,5.32,655,86,13.16,17258.87,3.9,41.1
+2024-03-10,Referral,Google,United States,Technology,Starter,38669,901,3706.62,4.11,,330,80,24.26,3952.03,2.4,55.6
+2024-02-16,Paid Search,Instagram,Singapore,Technology,Starter,78650,1573,6720.21,4.27,2.0,281,39,13.89,1967.78,3.1,32.4
+2024-03-30,Email,LinkedIn,Canada,Education,Enterprise,133207,2824,4490.94,1.59,2.12,511,41,8.04,35699.22,4.5,4.4
+2024-04-11,Display,Instagram,Australia,Education,Enterprise,18145,225,2218.8,9.85,1.24,70,19,27.56,19079.72,5.0,12.6
+2024-06-18,Email,Google,Canada,Technology,Starter,15061,1351,7408.23,5.48,8.97,767,111,14.57,5435.37,2.7,59.9
+2024-05-20,Social Media,LinkedIn,United States,Technology,Enterprise,35529,1510,5029.58,3.33,4.25,403,75,18.77,65285.35,4.4,16.3
+2024-04-12,Referral,Facebook,Singapore,Technology,Growth,19456,1360,6298.94,4.63,6.99,446,124,27.82,25313.57,3.6,31.3
+2024-06-12,Referral,Facebook,Australia,Healthcare,Starter,22292,1099,6507.5,5.92,4.93,507,54,10.82,2396.93,3.2,41.9
+2024-09-30,Email,Facebook,Singapore,Retail,Growth,21615,629,7494.61,11.9,2.91,397,51,12.95,11248.51,3.5,38.3
+2024-12-26,Social Media,Organic,Singapore,Finance,Enterprise,7568,750,20819.19,10.12,9.91,1340,0,18.55,0.0,4.5,10.6
+2024-11-04,Paid Search,Google,Singapore,Retail,Starter,3728,368,2787.53,7.56,9.87,243,22,9.44,1219.05,3.3,31.9
+2024-03-16,Referral,Facebook,Australia,Education,Growth,14102,1602,7692.36,4.8,11.36,496,37,7.53,7036.21,4.0,23.5
+2024-08-11,Display,Instagram,United States,Education,Enterprise,19148,944,7138.88,7.56,4.93,465,117,25.36,114829.88,4.4,5.4
+2024-03-31,Email,Organic,Canada,Education,Starter,3929,389,1620.24,4.16,9.9,216,45,20.99,1954.6,2.8,44.2
+2024-02-09,Paid Search,Instagram,United Kingdom,Finance,Enterprise,53113,4674,7105.5,1.52,8.8,453,123,27.17,123653.64,4.4,18.0
+2024-02-04,Social Media,Instagram,Australia,Technology,Starter,3078,359,3210.31,8.92,11.66,248,42,17.33,2022.09,3.0,38.9
+2024-09-02,Referral,Facebook,United States,Retail,Starter,599262,7311,6433.72,0.88,1.22,352,26,7.62,1235.31,3.4,28.9
+2024-02-08,Referral,Google,United Kingdom,Education,Enterprise,14512,833,7167.16,,5.74,859,173,20.18,173167.49,4.7,8.4
+2024-04-07,Display,Organic,Singapore,Healthcare,Enterprise,47806,741,2395.88,3.23,1.55,308,80,26.0,72228.22,4.1,24.5
+2024-05-30,Referral,LinkedIn,United States,Technology,Starter,1965,231,1814.23,7.84,11.75,155,12,7.89,661.33,2.4,55.1
+2024-05-15,Email,Organic,Canada,Finance,Growth,25355,1496,7106.84,4.75,5.9,650,108,16.63,19970.04,3.8,26.8
+2024-12-22,Email,Google,United Kingdom,Education,Growth,15049,1067,7771.5,7.28,7.09,1083,275,25.46,54534.62,3.0,36.4
+2024-08-31,Referral,Facebook,Canada,Healthcare,Starter,22971,317,3279.47,10.32,1.38,252,45,17.92,2315.29,3.4,31.5
+2024-08-17,Paid Search,Facebook,United States,Finance,Starter,4465,380,532.87,1.4,8.51,26,6,25.56,265.12,2.9,38.1
+2024-02-04,Email,LinkedIn,Singapore,Retail,Enterprise,12334,745,2743.79,3.68,6.04,331,81,24.66,86427.18,4.0,18.8
+2024-07-31,Paid Search,Facebook,Singapore,Education,Enterprise,4834,540,6115.34,11.31,11.17,467,35,7.52,33221.38,4.0,18.4
+2024-07-29,Social Media,LinkedIn,Canada,Education,Enterprise,28876,1568,3889.76,2.48,5.43,382,84,22.02,83127.35,3.7,36.0
+2024-12-19,Paid Search,Google,Canada,Healthcare,Growth,831,36,357.82,9.9,4.33,29,5,17.29,1088.2,4.5,19.3
+2024-03-09,Social Media,LinkedIn,United Kingdom,Healthcare,Enterprise,14169,435,3450.83,7.92,3.07,216,55,25.6,60952.17,4.4,0.0
+2024-01-29,Referral,Facebook,Australia,Healthcare,Enterprise,19459,2016,4153.0,2.06,10.36,412,23,5.72,21080.64,4.8,0.0
+2024-05-07,Email,LinkedIn,Australia,Healthcare,Enterprise,6039,369,1753.06,4.74,6.11,138,38,28.08,41318.26,4.4,21.3
+2024-08-16,Paid Search,LinkedIn,Singapore,Education,Growth,7376,284,2885.14,10.13,3.85,337,24,7.26,4105.49,4.5,14.8
+2024-04-19,Paid Search,Facebook,United States,Healthcare,Enterprise,48528,4649,3394.16,0.73,9.58,309,16,5.22,18685.78,4.1,9.3
+2024-01-05,Paid Search,Instagram,Singapore,Healthcare,Enterprise,17332,981,7742.79,7.89,5.66,380,52,13.72,48737.59,3.8,26.5
+2024-11-15,Display,Organic,Australia,Technology,Enterprise,6725,688,7995.55,11.61,10.23,1018,201,19.84,190545.58,4.2,7.6
+2024-06-21,Social Media,Instagram,United Kingdom,Healthcare,Enterprise,12447,534,5746.53,10.76,4.29,209,50,24.14,58186.28,4.6,0.0
+2024-11-03,Display,Instagram,United States,Technology,Enterprise,9526,1046,4079.51,3.9,10.98,206,48,23.42,50544.2,5.0,0.0
+2024-06-24,Paid Search,Organic,Canada,Healthcare,Enterprise,12600,1037,2541.52,2.45,8.23,322,39,12.34,39536.58,4.4,0.0
+2024-10-13,Paid Search,Instagram,Australia,Finance,Growth,3268,184,1941.96,10.52,5.63,150,21,14.29,4408.63,3.6,28.9
+2024-01-28,Referral,Organic,Singapore,Technology,Growth,10815,1140,7137.52,6.26,10.54,755,94,12.46,16254.05,3.9,18.6
+2024-04-12,Social Media,LinkedIn,Singapore,Retail,Starter,3187,305,2667.79,8.73,9.57,231,48,20.78,2144.76,3.2,35.4
+2024-05-20,Paid Search,Facebook,Singapore,Finance,Growth,27561,667,6324.65,9.47,2.42,425,66,15.74,13136.09,3.8,24.1
+2024-09-30,Paid Search,Instagram,Australia,Healthcare,Enterprise,2572,203,1686.5,8.28,7.89,70,15,22.34,14543.28,4.7,11.7
+2024-10-28,Social Media,Facebook,Australia,Technology,Growth,19687,1323,7598.01,5.74,6.72,560,88,15.84,19094.61,4.7,25.9
+2024-09-07,Social Media,Facebook,United States,Retail,Starter,9139,223,1981.66,8.86,2.44,176,34,19.74,1514.64,2.8,52.6
+2024-01-20,Display,Instagram,Singapore,Education,Starter,210136,4602,4832.61,1.05,2.19,361,22,6.21,959.99,3.0,41.4
+2024-05-09,Display,Facebook,United States,Technology,Growth,31220,2098,3482.8,1.66,6.72,281,63,22.52,12494.24,4.2,10.3
+2024-11-12,Email,Instagram,Australia,Technology,Growth,16041,624,1749.44,2.8,3.89,100,10,10.04,2181.44,3.8,26.2
+2024-09-11,Paid Search,LinkedIn,United Kingdom,Finance,Starter,8914,197,299.45,1.52,2.21,28,4,17.35,231.73,3.2,32.9
+2024-02-21,Social Media,Facebook,Canada,Healthcare,Growth,79280,2315,3821.36,1.65,2.92,148,18,12.26,4049.66,5.0,0.877
+2024-02-18,Email,Google,United States,Finance,Growth,6887,540,2988.71,5.53,7.84,428,31,7.32,7003.28,4.0,27.4
+2024-08-21,Social Media,LinkedIn,Canada,Retail,Enterprise,119430,2938,7111.77,2.42,2.46,767,226,29.54,258629.18,5.0,10.7
+2024-09-04,Referral,LinkedIn,United States,Education,Growth,7940,833,6277.48,7.53,10.49,762,176,23.18,40701.99,3.3,35.0
+2024-07-29,Display,Google,Australia,Healthcare,Enterprise,3640,308,2651.06,8.6,8.46,349,67,19.42,70129.34,5.0,0.0
+2024-06-22,Referral,Organic,Singapore,Technology,Growth,33229,1595,5361.36,3.36,4.8,756,110,14.62,25034.75,2.7,37.5
+2024-01-28,Email,Facebook,Singapore,Retail,Growth,80078,5133,6981.44,1.36,6.41,372,108,29.25,18646.95,3.9,33.3
+2024-07-25,Paid Search,Google,Canada,Retail,Enterprise,6030,357,3695.17,10.35,5.92,237,41,17.43,44181.68,4.7,11.0
+2024-10-12,Referral,Google,Australia,Education,Enterprise,6689,481,5172.8,10.74,7.19,621,101,16.41,97801.3,4.7,0.0
+2024-08-20,Social Media,Organic,Singapore,Education,Growth,20685,1237,5789.93,4.68,5.98,415,89,21.47,15067.97,3.5,39.0
+2024-05-29,Referral,Organic,United Kingdom,Technology,Starter,11633,1168,7195.64,6.16,10.04,1072,163,15.23,7499.8,3.3,37.8
+2024-07-20,Paid Search,LinkedIn,United States,Healthcare,Starter,74366,5927,6105.76,1.03,7.97,629,50,8.08,2847.18,2.7,48.8
+2024-09-15,Paid Search,LinkedIn,Australia,Education,Enterprise,498,51,578.86,11.26,10.23,50,8,17.71,9369.88,4.6,17.4
+2024-03-06,Email,LinkedIn,Singapore,Education,Growth,7128,839,4132.06,4.92,11.77,514,123,24.06,23149.33,4.8,0.0
+2024-08-19,Paid Search,Facebook,Canada,Education,Enterprise,10837,1113,7114.21,6.39,10.27,536,68,12.85,75260.95,4.1,16.1
+2024-04-17,Referral,Instagram,United Kingdom,Finance,Enterprise,6987,457,5270.67,11.52,6.54,352,45,13.06,40027.57,4.1,25.3
+2024-10-19,Display,Organic,United Kingdom,Retail,Starter,208230,5414,4277.29,0.79,2.6,600,60,10.0,3270.94,3.4,37.6
+2024-05-08,Paid Search,Google,United Kingdom,Finance,Enterprise,2112,45,451.99,9.86,2.13,64,15,23.49,17273.13,4.4,1.7
+2024-05-01,Referral,Instagram,Australia,Retail,Growth,4215,360,3449.22,9.56,8.54,283,17,6.35,3756.09,4.0,35.4
+2024-08-14,Paid Search,Instagram,Singapore,Education,Enterprise,4478,520,4906.42,9.43,11.61,218,20,9.44,21756.83,4.5,14.6
+2024-09-20,Email,LinkedIn,Australia,Retail,Growth,30592,2270,4541.47,2.0,7.42,301,39,13.26,8524.61,3.9,25.8
+2024-06-14,Referral,Google,Singapore,Healthcare,Growth,51722,931,6361.28,6.83,1.8,798,144,18.13,33955.8,3.1,36.2
+2024-03-22,Display,Organic,Singapore,Retail,Starter,3301,274,2925.34,10.66,8.3,291,35,12.34,2028.17,5.0,0.915
+2024-10-14,Email,Google,United Kingdom,Retail,Starter,12247,959,7255.07,7.56,7.83,1100,242,22.06,11411.28,4.0,10.3
+2024-07-16,Social Media,Organic,United Kingdom,Technology,Enterprise,13977,1374,6612.45,4.81,9.83,750,45,6.1,52345.54,4.6,17.0
+2024-02-19,Paid Search,Organic,Singapore,Technology,Enterprise,904,86,710.68,8.21,9.51,116,18,15.61,15938.78,3.8,21.1
+2024-08-10,Email,Facebook,Australia,Retail,Enterprise,115312,1845,2787.38,1.51,1.6,259,49,18.95,51459.09,4.4,18.1
+2024-07-17,Display,LinkedIn,Canada,Healthcare,Starter,164150,1740,3238.11,1.86,1.06,347,22,6.58,1197.75,3.9,26.4
+2024-07-02,Referral,Google,United Kingdom,Healthcare,Enterprise,1617,94,874.74,9.3,5.81,81,17,21.52,17252.96,4.2,15.1
+2024-07-19,Referral,Instagram,United States,Healthcare,Enterprise,5815,613,7118.43,11.6,10.54,457,132,28.93,112602.42,4.6,4.9
+2024-01-22,Email,Organic,Singapore,Retail,Enterprise,91238,3020,4470.7,1.48,3.31,666,154,23.15,142170.31,5.0,0.0
+2024-03-13,Paid Search,Facebook,United States,Education,Growth,6755,662,1715.74,2.59,9.8,167,43,26.28,10065.85,4.2,15.7
+2024-10-08,Email,Instagram,Australia,Healthcare,Starter,2109,242,1739.86,7.18,11.47,83,18,21.78,822.1,3.2,39.0
+2024-04-09,Social Media,LinkedIn,Canada,Healthcare,Enterprise,23507,630,5343.49,8.47,2.68,501,126,25.19,149227.48,4.6,14.0
+2024-04-23,Display,Instagram,United Kingdom,Finance,Enterprise,9162,558,5917.19,10.6,6.09,284,35,12.64,36471.47,4.6,17.8
+2024-05-23,Paid Search,Organic,United States,Healthcare,Enterprise,281639,5154,7113.42,1.38,1.83,442,78,17.68,67084.45,4.0,16.0
+2024-10-29,Paid Search,Google,Singapore,Healthcare,Enterprise,13052,1069,7173.09,6.71,8.19,483,71,14.81,82419.72,3.7,17.6
+2024-03-09,Display,Organic,Singapore,Technology,Growth,134986,4900,3038.15,0.62,3.63,533,157,29.55,34037.89,3.8,19.6
+2024-03-22,Paid Search,Organic,Singapore,Finance,Enterprise,36250,522,5909.63,11.3,1.44,894,96,10.79,90391.92,4.5,21.8
+2024-09-22,Social Media,LinkedIn,Canada,Retail,Starter,2990,64,511.26,7.96,2.14,66,13,20.84,602.43,3.2,25.5
+2024-10-18,Paid Search,LinkedIn,Canada,Healthcare,Enterprise,7829,523,5296.03,10.11,6.68,408,112,27.68,115326.33,3.9,34.8
+2024-09-06,Display,Organic,Australia,Education,Starter,17357,1156,3631.21,3.14,6.66,340,29,8.76,1286.11,2.6,39.2
+2024-12-04,Paid Search,LinkedIn,United Kingdom,Technology,Growth,12120,909,5466.79,6.01,7.5,551,84,15.27,15634.22,4.2,23.7
+2024-03-09,Referral,Google,Singapore,Finance,Starter,2005,134,1497.46,11.11,6.68,141,41,29.23,2155.99,3.7,17.1
+2024-05-25,Email,Facebook,Canada,Education,Growth,27946,2831,6964.96,2.46,10.13,552,137,24.87,31002.36,4.0,30.7
+2024-05-15,Paid Search,Instagram,Canada,Education,Enterprise,6163,151,736.97,4.85,2.45,21,3,18.07,3501.3,4.1,4.3
+2024-11-06,Email,Facebook,Canada,Education,Enterprise,810,53,504.49,9.51,6.54,22,3,17.06,2684.16,3.8,14.9
+2024-12-13,Display,Organic,Canada,Healthcare,Starter,9169,1038,5641.61,5.43,11.32,664,160,24.22,7625.82,3.5,13.5
+2024-12-22,Referral,Google,Canada,Finance,Growth,11837,1237,3921.7,3.17,10.45,319,85,26.92,16797.04,4.0,31.7
+2024-01-04,Referral,Organic,Australia,Education,Starter,11086,1092,3125.23,2.86,9.85,340,26,7.66,1272.89,2.9,38.8
+2024-10-01,Display,Organic,United Kingdom,Education,Growth,48302,1565,7936.03,5.07,3.24,1001,189,18.94,34321.99,3.4,28.7
+2024-06-06,Referral,Instagram,Canada,Finance,Enterprise,3735,359,1128.87,3.14,9.61,91,6,7.51,6161.35,4.6,0.0
+2024-11-10,Email,Facebook,Canada,Technology,Starter,14710,1118,6621.39,5.92,7.6,280,32,11.58,1536.31,2.7,37.9
+2024-07-24,Referral,Organic,United Kingdom,Education,Starter,9477,762,7576.58,9.93,8.04,853,85,10.04,4497.82,3.3,27.8
+2024-01-18,Referral,Organic,Singapore,Finance,Enterprise,46060,1672,1521.97,0.91,3.63,91,8,8.94,9581.5,4.5,2.7
+2024-07-21,Display,Organic,United States,Education,Starter,231658,4610,5948.02,1.29,1.99,559,143,25.74,8199.96,2.6,64.8
+2024-05-21,Paid Search,Organic,United States,Retail,Growth,24416,,4684.27,3.5,5.48,340,23,6.81,4361.83,4.5,5.3
+2024-05-11,Referral,Organic,United Kingdom,Retail,Growth,5262,491,4592.72,9.35,9.33,805,132,16.47,26563.57,3.7,25.0
+2024-02-29,Social Media,Google,Canada,Finance,Enterprise,10541,584,5669.17,9.7,5.54,502,92,18.39,100665.59,4.4,18.6
+2024-07-23,Social Media,Google,Singapore,Finance,Growth,12024,879,2648.21,3.01,7.31,188,44,23.65,10293.46,4.0,32.2
+2024-04-30,Paid Search,Instagram,United States,Finance,Starter,13475,663,6712.54,10.12,4.92,480,38,8.0,1633.85,3.6,25.4
+2024-01-04,Referral,Google,Canada,Healthcare,Enterprise,2291,245,2660.25,10.83,10.69,297,35,11.87,31958.19,5.0,0.892
+2024-07-22,Paid Search,Organic,United States,Technology,Enterprise,15424,1072,6434.31,6.0,6.95,774,114,14.84,124160.63,4.9,21.5
+2024-12-23,Referral,LinkedIn,United Kingdom,Technology,Starter,53222,1123,5458.0,4.86,2.11,413,109,26.55,4889.7,3.2,42.3
+2024-11-09,Social Media,Instagram,United States,Retail,Growth,4215,215,1842.15,8.56,5.1,139,16,11.99,2906.87,4.2,23.7
+2024-04-27,Email,Instagram,United States,Education,Growth,25520,2501,6879.21,2.75,9.8,477,80,16.82,13586.28,3.6,30.0
+2024-11-18,Referral,Organic,United Kingdom,Retail,Growth,13684,208,2157.6,10.37,1.52,155,14,9.08,2578.2,3.8,39.3
+2024-02-19,Display,Instagram,United Kingdom,Healthcare,Growth,10626,407,4570.73,11.22,3.83,133,10,8.03,2295.62,4.1,16.8
+2024-10-21,Referral,Facebook,United Kingdom,Healthcare,Growth,9802,892,5450.9,6.11,9.1,545,79,14.53,14939.4,3.6,24.7
+2024-03-26,Social Media,LinkedIn,Singapore,Education,Growth,185863,5167,6821.43,1.32,,437,56,12.92,10608.81,3.7,37.4
+2024-05-18,Display,Instagram,Singapore,Education,Growth,105040,1313,3429.11,2.61,1.25,235,50,21.55,11732.57,3.8,20.9
+2024-03-26,Display,Google,Australia,Technology,Growth,104227,5597,4477.78,0.8,5.37,589,41,7.08,7684.62,4.1,27.7
+2024-07-18,Social Media,Facebook,United States,Healthcare,Growth,24755,,5086.55,2.01,10.22,193,41,21.59,9392.06,3.6,36.1
+2024-10-03,Social Media,Organic,Canada,Finance,Enterprise,10033,604,4406.44,7.29,6.02,660,177,26.93,177219.45,4.1,10.4
+2024-06-26,Display,Organic,United States,Technology,Growth,18302,496,2601.37,5.24,2.71,159,28,18.08,6215.02,4.0,25.0
+2024-09-30,Email,LinkedIn,Canada,Healthcare,Starter,8414,637,6173.78,9.68,7.57,704,131,18.71,5879.8,3.5,24.2
+2024-05-07,Paid Search,LinkedIn,Canada,Finance,Growth,1586,106,817.84,7.69,6.68,93,18,20.33,3914.67,3.7,37.5
+2024-09-29,Social Media,LinkedIn,United States,Technology,Starter,11896,715,1265.67,1.77,6.01,106,23,22.51,1152.02,3.1,42.2
+2024-09-30,Email,Facebook,Australia,Healthcare,Growth,19449,212,1175.31,5.54,1.09,49,2,5.37,368.55,3.2,42.7
+2024-09-12,Social Media,LinkedIn,Australia,Healthcare,Starter,36543,592,6779.66,11.44,1.62,761,51,6.78,2535.36,3.5,44.4
+2024-07-14,Email,Google,United States,Retail,Growth,5579,178,2127.87,11.94,3.19,273,20,7.35,4310.75,3.9,29.7
+2024-06-08,Social Media,Facebook,Australia,Education,Enterprise,4452,191,1152.7,6.03,4.29,71,4,6.3,4329.04,4.7,5.0
+2024-08-10,Social Media,Google,United States,Healthcare,Enterprise,10727,118,1133.27,9.58,1.1,63,15,24.59,15229.93,4.1,13.6
+2024-02-15,Paid Search,Facebook,Canada,Technology,Enterprise,3742,448,5025.43,11.2,11.97,407,26,6.49,27937.67,4.2,2.5
+2024-03-05,Display,Facebook,United Kingdom,Education,Enterprise,10720,625,6102.24,9.76,5.83,304,67,22.23,65283.68,5.0,12.8
+2024-09-05,Display,Organic,United Kingdom,Education,Enterprise,8209,573,4022.72,7.02,6.98,397,66,16.71,76066.85,3.8,14.8
+2024-03-23,Email,Organic,United States,Retail,Growth,16343,979,6591.46,6.73,5.99,1009,178,17.65,39204.37,4.2,8.5
+2024-07-05,Referral,Facebook,United Kingdom,Technology,Enterprise,25242,780,7743.87,9.92,3.09,659,159,24.14,143583.69,4.3,22.0
+2024-06-13,Email,Google,Singapore,Technology,Starter,31800,3374,6714.51,1.99,10.61,490,83,17.13,3597.52,2.5,43.4
+2024-12-02,Display,Organic,Singapore,Education,Growth,2146,191,582.87,3.04,8.9,35,9,28.03,1933.41,4.5,3.4
+2024-08-27,Email,Instagram,Singapore,Retail,Growth,70154,5465,6395.15,1.17,7.79,368,85,23.36,19317.94,4.0,22.6
+2024-09-22,Email,Google,United States,Education,Growth,6844,256,1677.79,6.55,3.74,196,18,9.47,3983.96,3.6,29.9
+2024-11-22,Referral,Instagram,Canada,Retail,Starter,10774,584,1501.11,2.57,5.42,70,6,8.95,352.64,2.9,44.6
+2024-06-10,Referral,Instagram,United Kingdom,Retail,Enterprise,5227,402,3558.59,8.85,7.69,211,21,10.35,23454.48,4.7,3.3
+2024-08-19,Display,LinkedIn,Australia,Technology,Growth,6295,751,4846.95,6.45,11.93,342,42,12.51,7753.39,3.9,20.7
+2024-12-19,Social Media,Organic,Singapore,Education,Enterprise,229225,3255,7422.2,2.28,1.42,762,64,8.46,62560.03,4.1,15.1
+2024-06-02,Email,Organic,Canada,Education,Starter,6913,672,5927.27,8.82,9.72,478,122,25.64,6524.14,2.4,44.0
+2024-10-31,Social Media,Google,Singapore,Retail,Starter,12094,566,6284.95,11.1,4.68,901,142,15.86,8179.73,3.7,35.4
+2024-11-30,Referral,Google,Canada,Technology,Growth,14257,1028,4290.19,4.17,7.21,368,82,22.44,14745.26,3.2,11.5
+2024-08-16,Referral,Organic,Singapore,Technology,Starter,14220,374,3569.1,9.54,2.63,358,60,16.9,3265.93,2.9,40.1
+2024-07-23,Referral,LinkedIn,United States,Finance,Growth,9130,746,4562.51,6.11,8.17,279,56,20.4,12341.8,3.8,27.1
+2024-08-08,Social Media,Organic,Australia,Technology,Enterprise,23483,728,3425.94,4.7,3.1,347,74,21.39,82751.91,4.6,14.5
+2024-08-14,Referral,Facebook,Canada,Technology,Starter,3918,366,1757.54,4.8,9.34,171,13,7.81,553.61,4.1,12.2
+2024-05-27,Email,Instagram,Australia,Healthcare,Growth,9814,897,3875.28,4.32,9.14,154,28,18.66,6199.54,3.3,30.6
+2024-03-13,Email,LinkedIn,Singapore,Education,Starter,57383,1842,2192.56,1.19,3.21,230,27,11.78,1339.85,3.3,33.0
+2024-12-04,Social Media,Instagram,Australia,Technology,Growth,24689,874,6965.8,7.97,3.54,343,100,29.42,17608.74,3.5,44.7
+2024-09-29,Email,Facebook,United States,Education,Growth,36527,526,4573.36,8.69,1.44,468,59,12.62,11993.16,3.8,22.5
+2024-12-16,Social Media,Instagram,United Kingdom,Finance,Enterprise,50731,1943,2351.85,1.21,3.83,116,34,30.0,40644.62,5.0,0.0
+2024-04-25,Paid Search,Instagram,Canada,Finance,Starter,10732,908,5893.14,6.49,8.46,453,100,22.16,4880.73,2.8,40.3
+2024-06-08,Referral,Instagram,Canada,Education,Starter,12474,867,1812.71,2.09,6.95,131,34,26.56,1596.28,3.1,28.6
+2024-03-10,Display,Facebook,Singapore,Finance,Growth,1223,109,728.95,6.63,8.91,35,9,25.99,1613.57,4.1,19.3
+2024-07-30,Display,Instagram,Canada,Healthcare,Starter,119735,3628,6277.04,1.73,3.03,443,89,20.3,4114.18,2.9,39.6
+2024-04-28,Paid Search,Google,United Kingdom,Technology,Enterprise,29864,3079,6282.64,2.04,10.31,632,134,21.24,122405.97,4.1,23.9
+2024-03-24,Paid Search,Facebook,Australia,Retail,Starter,18811,649,7418.39,11.43,3.45,625,62,10.07,2799.81,3.6,45.8
+2024-08-12,Referral,LinkedIn,United Kingdom,Retail,Starter,4863,374,3534.93,9.43,7.69,411,94,23.01,4550.51,3.7,22.1
+2024-10-01,Referral,Google,Singapore,Technology,Growth,3330,355,3763.82,10.59,10.66,291,53,18.45,12596.71,4.2,17.9
+2024-11-18,Email,Facebook,United Kingdom,Retail,Growth,18192,755,7098.3,9.4,4.15,340,42,12.36,9792.75,3.5,13.9
+2024-08-25,Display,Google,Singapore,Technology,Starter,6408,555,6274.1,11.29,8.66,414,63,15.34,3111.11,3.4,41.6
+2024-12-30,Paid Search,LinkedIn,Australia,Healthcare,Growth,5235,511,5595.4,10.93,9.76,599,48,8.09,8500.88,3.4,34.4
+2024-09-25,Display,Organic,Singapore,Finance,Growth,155972,4492,4492.7,1.0,2.88,450,120,26.78,27508.22,3.9,25.8
+2024-12-30,Email,LinkedIn,United Kingdom,Healthcare,Enterprise,13941,1100,42588.42,5.63,7.89,336,27,8.29,148264.52,4.2,11.7
+2024-08-22,Display,LinkedIn,Singapore,Technology,Enterprise,29224,2186,7085.08,3.24,7.48,608,92,15.25,80676.08,4.2,12.5
+2024-10-07,Social Media,Organic,Singapore,Finance,Starter,30000,1452,1641.75,1.13,4.84,127,7,5.81,360.95,2.9,37.7
+2024-02-14,Email,Google,Canada,Finance,Starter,8385,722,5442.31,7.53,8.61,619,152,24.68,6793.3,2.7,48.9
+2024-01-19,Email,Instagram,United Kingdom,Healthcare,Growth,6955,715,6598.06,9.22,10.28,208,34,16.77,6040.06,4.0,14.5
+2024-07-30,Referral,Facebook,United States,Education,Starter,1489,118,1052.56,8.89,7.92,112,19,17.09,1015.75,4.3,4.5
+2024-05-27,Display,Organic,United Kingdom,Healthcare,Enterprise,5446,610,4686.11,7.67,11.2,626,108,17.41,119243.82,3.7,26.2
+2024-11-08,Paid Search,Instagram,United States,Technology,Starter,2173,50,,7.69,2.3,29,7,24.99,411.48,2.9,45.7
+2024-10-13,Paid Search,Google,United States,Healthcare,Growth,23972,1575,6363.52,4.04,6.57,545,28,5.15,6073.72,3.5,40.8
+2024-11-11,Email,Facebook,United States,Healthcare,Growth,19774,1230,7393.78,6.01,6.22,285,23,8.39,4139.37,3.0,43.9
+2024-06-20,Display,LinkedIn,Australia,Education,Growth,7805,555,4606.55,8.3,7.11,210,40,19.43,7690.17,4.4,4.8
+2024-02-03,Paid Search,Instagram,Australia,Healthcare,Growth,6854,499,5086.78,10.19,7.28,253,50,19.88,11468.45,3.8,11.5
+2024-06-10,Email,Instagram,Canada,Technology,Growth,14584,1476,7040.98,4.77,10.12,316,57,18.13,10336.36,3.7,27.6
+2024-04-13,Email,LinkedIn,Singapore,Technology,Growth,67447,3197,7258.66,2.27,4.74,628,168,26.85,32048.77,3.5,42.1
+2024-02-20,Referral,Facebook,United States,Technology,Growth,13568,308,3223.19,10.45,2.27,188,11,6.1,2510.44,4.0,14.8
+2024-01-24,Email,Organic,United Kingdom,Technology,Enterprise,23534,779,6116.25,7.85,3.31,514,62,12.16,64186.13,4.5,0.0
+2024-05-19,Paid Search,Facebook,United Kingdom,Technology,Starter,51877,1105,7674.72,6.94,,576,107,18.73,4953.94,3.9,17.0
+2024-10-20,Paid Search,Facebook,Australia,Healthcare,Enterprise,68269,1065,7159.5,6.72,1.56,272,75,27.58,65009.4,4.3,16.3
+2024-07-19,Paid Search,Organic,Singapore,Retail,Enterprise,21635,688,2973.87,4.32,3.18,449,113,25.23,99057.32,5.0,0.0
+2024-10-17,Paid Search,Google,Canada,Technology,Growth,3510,,2621.06,7.91,9.43,264,75,28.69,13437.02,4.0,16.2
+2024-07-05,Display,Facebook,United Kingdom,Healthcare,Growth,142946,3202,4002.55,1.25,2.24,282,73,26.14,13783.07,3.5,38.5
+2024-09-17,Email,LinkedIn,Australia,Healthcare,Enterprise,7973,547,5265.72,9.61,6.86,417,63,15.34,67173.05,3.4,25.6
+2024-07-15,Email,Instagram,United States,Education,Growth,11863,1146,6317.65,5.51,9.66,369,40,10.9,8612.04,4.6,16.7
+2024-10-20,Display,Google,Singapore,Education,Growth,28644,1690,2737.95,1.62,5.9,230,34,15.14,7167.84,3.6,18.1
+2024-07-13,Social Media,LinkedIn,Australia,Technology,Starter,5612,614,6572.86,10.7,10.94,657,32,5.0,1413.32,3.5,37.9
+2024-07-18,Referral,Organic,Canada,Finance,Starter,18321,1332,5515.83,4.14,7.27,935,117,12.61,6765.9,2.2,65.1
+2024-06-25,Email,Organic,Australia,Education,Enterprise,40117,1701,3352.74,1.97,4.24,349,65,18.72,56402.19,4.2,1.8
+2024-07-02,Email,Instagram,Australia,Finance,Growth,25066,1128,5677.33,5.03,4.5,280,40,14.54,8284.7,3.6,20.3
+2024-04-06,Referral,LinkedIn,United Kingdom,Retail,Starter,9747,232,2450.07,10.54,2.38,110,23,21.21,1014.75,3.6,20.2
+2024-03-10,Email,Facebook,Canada,Retail,Enterprise,30536,910,4914.55,5.4,2.98,357,67,18.8,67436.07,4.2,20.0
+2024-11-05,Email,Organic,Canada,Finance,Enterprise,11241,788,4113.48,5.22,7.01,427,125,29.46,130975.44,4.3,10.2
+2024-09-03,Email,Facebook,Singapore,Healthcare,Growth,8417,649,4232.21,6.52,7.71,227,47,20.77,10122.83,3.5,19.4
+2024-10-03,Referral,Instagram,Singapore,Technology,Growth,117746,7053,4373.26,0.62,5.99,344,66,19.35,12687.84,3.1,55.6
+2024-05-30,Social Media,Facebook,Australia,Education,Enterprise,6968,269,2571.75,9.53,3.86,209,40,19.45,41978.02,4.2,10.5
+2024-11-15,Email,Instagram,Canada,Technology,Starter,9901,402,4143.65,10.29,4.06,146,17,12.02,958.16,3.4,32.3
+2024-03-30,Referral,Facebook,Canada,Healthcare,Starter,4123,261,2237.77,8.56,6.33,209,55,26.55,2614.14,3.4,34.3
+2024-03-19,Display,LinkedIn,Canada,Finance,Enterprise,13975,464,3633.44,7.83,,394,53,13.63,56906.98,4.4,8.0
+2024-03-26,Display,LinkedIn,Canada,Healthcare,Growth,9577,657,6019.97,9.15,6.86,466,105,22.64,21231.54,4.3,26.8
+2024-01-07,Social Media,LinkedIn,Canada,Healthcare,Enterprise,51370,5697,5526.44,0.97,11.09,553,159,28.9,159019.71,5.0,0.0
+2024-06-20,Social Media,Instagram,Australia,Healthcare,Enterprise,9727,820,4756.58,5.8,8.43,197,42,21.8,46979.28,5.0,0.853
+2024-04-02,Social Media,Organic,Australia,Technology,Starter,8457,181,293.3,1.62,2.14,33,3,10.49,139.53,3.2,37.6
+2024-02-17,Email,Organic,United States,Education,Enterprise,5076,99,1149.96,11.51,1.95,152,21,14.4,23440.89,4.0,8.4
+2024-04-04,Email,Facebook,United Kingdom,Healthcare,Growth,65208,3906,5351.73,1.37,5.99,576,139,24.23,30213.49,3.5,18.1
+2024-05-11,Paid Search,Google,United Kingdom,Technology,Growth,7031,270,3231.01,11.95,3.84,441,41,9.45,7133.33,4.1,17.3
+2024-07-20,Paid Search,LinkedIn,Australia,Finance,Enterprise,25470,2058,6195.92,3.01,8.08,770,176,22.89,155806.52,4.9,6.6
+2024-05-08,Display,Google,Canada,Finance,Enterprise,,462,5194.62,11.23,8.31,414,93,22.5,108386.81,4.0,15.6
+2024-09-08,Display,LinkedIn,Canada,Technology,Enterprise,4638,398,1961.61,4.92,8.58,220,17,8.03,17617.42,4.8,3.6
+2024-06-04,Display,Google,Australia,Healthcare,Enterprise,15160,1554,6856.07,4.41,10.25,898,110,12.25,101218.82,3.4,25.0
+2024-12-04,Paid Search,Instagram,Canada,Technology,Enterprise,8519,915,5572.97,6.09,10.74,292,28,9.74,24125.69,5.0,4.3
+2024-05-02,Display,LinkedIn,Australia,Education,Enterprise,3840,391,2600.3,6.64,10.18,217,64,29.9,55174.53,5.0,4.9
+2024-01-22,Display,Google,United States,Education,Growth,10376,716,7532.7,10.51,6.9,972,105,10.82,18287.55,3.8,14.8
+2024-01-10,Display,Organic,Australia,Finance,Enterprise,98630,7851,5260.53,0.67,7.96,886,226,25.52,199596.02,3.8,14.2
+2024-02-02,Email,Google,Canada,Education,Enterprise,3444,196,1920.47,9.75,5.69,261,77,29.55,83649.09,3.9,41.5
+2024-10-21,Referral,Facebook,United Kingdom,Finance,Starter,47467,1106,4826.06,4.36,2.33,222,34,15.38,1822.11,2.8,41.2
+2024-10-24,Email,Facebook,Australia,Education,Growth,144874,9214,6265.76,0.68,6.36,228,21,9.49,3682.53,3.3,20.4
+2024-08-01,Display,Facebook,United States,Finance,Enterprise,11212,407,2313.41,5.68,3.63,112,24,22.29,25383.28,4.3,3.2
+2024-02-15,Social Media,Instagram,Canada,Technology,Enterprise,16120,1101,2037.98,1.85,6.83,67,9,14.05,10037.51,4.1,16.6
+2024-11-16,Paid Search,Instagram,Australia,Finance,Starter,6566,765,6413.58,8.38,11.65,349,32,9.41,1700.57,3.8,27.1
+2024-05-25,Paid Search,LinkedIn,United Kingdom,Healthcare,Enterprise,47432,702,6480.2,9.22,1.48,707,198,28.12,180308.52,4.5,1.0
+2024-02-29,Email,Facebook,Canada,Education,Enterprise,11633,983,2742.58,2.79,8.45,163,39,24.47,37564.1,4.9,9.6
+2024-04-12,Display,Facebook,Australia,Retail,Enterprise,14285,370,3978.38,10.74,2.59,409,66,16.37,64982.28,4.8,13.6
+2024-11-19,Social Media,Instagram,United States,Healthcare,Starter,1540,63,450.34,7.04,4.09,15,2,16.64,97.65,3.2,30.4
+2024-05-31,Referral,Facebook,Singapore,Finance,Enterprise,38512,751,7767.06,10.33,1.95,758,130,17.23,155646.92,3.8,15.7
+2024-05-22,Email,LinkedIn,United States,Finance,Growth,10464,1172,22894.93,3.06,11.2,456,0,27.84,0.0,3.7,27.2
+2024-08-28,Referral,Google,Canada,Education,Growth,4047,406,3938.3,9.68,10.03,390,42,11.01,8738.04,4.4,13.0
+2024-04-21,Paid Search,Instagram,United Kingdom,Finance,Enterprise,140574,11752,7991.82,0.68,8.36,296,48,16.48,50332.02,3.5,19.0
+2024-08-25,Paid Search,LinkedIn,United States,Healthcare,Enterprise,4694,491,3821.51,7.78,10.46,191,52,27.34,50208.63,4.8,5.7
+2024-05-18,Referral,Organic,Singapore,Finance,Enterprise,858,78,831.48,10.63,9.09,55,15,28.63,16275.64,4.5,7.5
+2024-07-06,Display,Organic,Australia,Healthcare,Growth,12988,226,1567.09,6.93,1.74,227,22,10.12,5224.87,3.8,27.9
+2024-09-01,Referral,Facebook,United States,Healthcare,Growth,20265,1145,7203.88,6.29,5.65,287,41,14.32,8227.08,3.0,39.9
+2024-08-28,Referral,Organic,United Kingdom,Retail,Enterprise,4310,372,3071.54,8.24,8.63,544,147,27.08,134506.15,4.5,7.7
+2024-07-19,Paid Search,Instagram,Australia,Technology,Starter,4272,276,2352.35,8.52,6.46,181,32,18.02,1677.05,2.9,62.4
+2024-10-04,Paid Search,LinkedIn,United Kingdom,Retail,Growth,257727,7938,5954.13,0.75,3.08,273,68,25.05,15456.68,3.4,31.1
+2024-10-23,Social Media,Instagram,Canada,Education,Enterprise,9372,553,5635.54,10.18,5.9,253,20,8.3,22502.91,4.5,15.5
+2024-09-04,Social Media,Instagram,Australia,Finance,Growth,2692,210,2418.18,11.5,7.8,89,16,18.38,2909.53,4.1,29.2
+2024-12-07,Paid Search,Facebook,United States,Technology,Starter,,1118,7951.43,7.11,5.85,497,50,10.13,2688.87,2.6,28.9
+2024-03-16,Social Media,LinkedIn,Singapore,Finance,Enterprise,4220,230,2552.17,11.08,5.45,224,19,8.63,19176.77,4.4,12.7
+2024-10-06,Referral,Instagram,United Kingdom,Retail,Growth,7091,846,79626.45,9.17,11.93,507,126,24.99,88593.35,4.1,14.6
+2024-02-27,Display,Google,United States,Education,Starter,4956,508,2603.04,5.12,10.25,256,18,7.31,766.69,2.9,33.8
+2024-04-23,Social Media,Facebook,Australia,Technology,Enterprise,7137,823,6825.72,8.29,11.53,725,107,14.86,109208.61,4.0,14.2
+2024-01-29,Social Media,LinkedIn,United States,Retail,Growth,104759,5018,3211.68,0.64,4.79,228,36,16.14,7496.13,4.0,36.3
+2024-07-31,Display,Instagram,United States,Retail,Enterprise,45683,3408,7192.14,2.11,7.46,236,24,10.19,24362.36,5.0,0.0
+2024-02-03,Referral,LinkedIn,Australia,Technology,Growth,48732,1423,5182.69,3.64,2.92,438,84,19.2,19561.15,4.0,34.4
+2024-05-28,Referral,LinkedIn,Australia,Healthcare,Enterprise,6065,370,2570.53,6.93,6.1,119,6,5.06,5645.97,5.0,0.0
+2024-08-29,Email,Instagram,Canada,Finance,Growth,70076,918,7272.99,7.92,1.31,515,89,17.33,21071.11,3.5,25.6
+2024-09-03,Referral,LinkedIn,United Kingdom,Retail,Enterprise,15165,1374,6582.59,4.79,9.06,299,34,11.49,35785.87,4.7,13.1
+2024-12-20,Paid Search,Instagram,United States,Technology,Growth,3344,385,3017.07,7.82,11.51,92,11,12.29,2350.18,4.0,22.4
+2024-11-17,Paid Search,Google,Singapore,Finance,Enterprise,6375,656,2716.33,4.14,10.29,367,43,11.79,47007.36,4.1,25.5
+2024-06-29,Paid Search,Google,United States,Education,Growth,10780,511,3109.51,6.08,4.74,456,34,7.56,6117.1,3.8,29.1
+2024-10-13,Referral,Organic,Singapore,Education,Enterprise,55502,3369,17729.73,1.81,6.07,421,0,25.47,0.0,4.1,18.9
+2024-07-04,Paid Search,LinkedIn,Singapore,Education,Growth,4189,385,21438.31,,9.19,84,0,8.22,0.0,3.7,19.7
+2024-04-17,Paid Search,Google,Canada,Technology,Starter,993,57,346.69,,5.74,25,1,5.82,52.97,2.8,39.0
+2024-05-09,Email,Google,United Kingdom,Technology,Starter,17423,568,6302.49,11.08,3.26,918,88,9.62,4195.73,3.9,30.4
+2024-05-22,Referral,Instagram,United Kingdom,Finance,Enterprise,12717,833,6290.26,7.55,6.55,200,50,25.49,55800.91,3.8,21.7
+2024-05-24,Paid Search,Organic,Australia,Technology,Starter,11527,717,7379.72,10.29,6.22,1061,102,9.63,5426.5,3.8,33.5
+2024-07-13,Display,Facebook,Singapore,Finance,Growth,3855,91,1080.19,11.82,2.36,47,3,8.4,666.73,3.7,16.2
+2024-01-21,Email,Instagram,Canada,Technology,Growth,7336,325,2412.17,7.4,4.43,199,32,16.1,6647.37,3.6,43.2
+2024-04-06,Email,LinkedIn,United Kingdom,Finance,Starter,60138,1299,7990.04,6.15,2.16,659,141,21.46,6078.21,3.5,36.3

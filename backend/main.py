@@ -15,6 +15,7 @@ from analyser import analyse_csv, get_charts
 from ai_insights import stream_insights, stream_chat, get_insights
 from pdf_export import generate_pdf
 from hubspot_connector import FETCHERS
+from hubspot_analyser import ANALYSERS as HS_ANALYSERS
 
 load_dotenv()
 
@@ -30,7 +31,11 @@ app.add_middleware(
 
 sessions: dict = {}
 
-SAMPLE_PATH = Path(__file__).parent.parent / "sample_data" / "sales_sample.csv"
+SAMPLE_DIR = Path(__file__).parent.parent / "sample_data"
+SAMPLES = {
+    "marketing": SAMPLE_DIR / "marketing_sample.csv",
+    "sales":     SAMPLE_DIR / "sales_sample.csv",
+}
 
 
 def _sanitize(obj):
@@ -63,7 +68,17 @@ def hubspot_fetch(object_type: str):
         df = fetcher()
         if df.empty:
             raise HTTPException(404, f"No {object_type} found in HubSpot.")
-        return _make_session(df, filename)
+        response = _make_session(df, filename)
+        # Attach HubSpot-specific business analysis
+        if object_type in HS_ANALYSERS:
+            hs_data = HS_ANALYSERS[object_type](df)
+            body = json.loads(response.body)
+            hs_clean = json.loads(json.dumps(_sanitize(hs_data), default=str))
+            body["hubspot"] = hs_clean
+            # Persist in session for PDF export
+            sessions[body["session_id"]]["hubspot"] = hs_clean
+            return JSONResponse(content=body)
+        return response
     except HTTPException:
         raise
     except Exception as e:
@@ -89,11 +104,13 @@ async def upload_csv(file: UploadFile = File(...)):
 
 
 @app.get("/api/sample")
-def load_sample():
-    if not SAMPLE_PATH.exists():
-        raise HTTPException(404, "Sample file not found.")
-    df = pd.read_csv(SAMPLE_PATH)
-    return _make_session(df, "sales_sample.csv")
+@app.get("/api/sample/{name}")
+def load_sample(name: str = "marketing"):
+    path = SAMPLES.get(name)
+    if not path or not path.exists():
+        raise HTTPException(404, f"Sample '{name}' not found.")
+    df = pd.read_csv(path)
+    return _make_session(df, path.name)
 
 
 class InsightsRequest(BaseModel):
@@ -126,7 +143,7 @@ def export_pdf(session_id: str):
 
     insights = get_insights(session["summary"])
     filename = session.get("filename", "report")
-    pdf_bytes = generate_pdf(filename, session["summary"], insights)
+    pdf_bytes = generate_pdf(filename, session["summary"], insights, session.get("hubspot"))
     safe_name = filename.replace(".csv", "").replace(" ", "_")
     return Response(
         content=pdf_bytes,
