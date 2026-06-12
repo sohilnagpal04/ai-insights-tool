@@ -1,18 +1,20 @@
 import io
 import json
+import math
 import uuid
 from pathlib import Path
 
 from dotenv import load_dotenv
 from fastapi import FastAPI, File, HTTPException, UploadFile
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.responses import StreamingResponse, Response
+from fastapi.responses import StreamingResponse, Response, JSONResponse
 from pydantic import BaseModel
 import pandas as pd
 
 from analyser import analyse_csv, get_charts
 from ai_insights import stream_insights, stream_chat, get_insights
 from pdf_export import generate_pdf
+from hubspot_connector import FETCHERS
 
 load_dotenv()
 
@@ -31,12 +33,42 @@ sessions: dict = {}
 SAMPLE_PATH = Path(__file__).parent.parent / "sample_data" / "sales_sample.csv"
 
 
-def _make_session(df: pd.DataFrame, filename: str) -> dict:
+def _sanitize(obj):
+    if isinstance(obj, float):
+        if math.isnan(obj) or math.isinf(obj):
+            return None
+        return obj
+    if isinstance(obj, dict):
+        return {k: _sanitize(v) for k, v in obj.items()}
+    if isinstance(obj, list):
+        return [_sanitize(v) for v in obj]
+    return obj
+
+
+def _make_session(df: pd.DataFrame, filename: str):
     session_id = str(uuid.uuid4())
     summary = analyse_csv(df)
     charts = get_charts(df)
     sessions[session_id] = {"df": df, "summary": summary, "filename": filename}
-    return {"session_id": session_id, "filename": filename, "summary": summary, "charts": charts}
+    payload = {"session_id": session_id, "filename": filename, "summary": summary, "charts": charts}
+    return JSONResponse(content=json.loads(json.dumps(_sanitize(payload), default=str)))
+
+
+@app.get("/api/hubspot/fetch/{object_type}")
+def hubspot_fetch(object_type: str):
+    if object_type not in FETCHERS:
+        raise HTTPException(400, f"Unknown object type. Choose from: {', '.join(FETCHERS)}")
+    try:
+        fetcher, filename = FETCHERS[object_type]
+        df = fetcher()
+        if df.empty:
+            raise HTTPException(404, f"No {object_type} found in HubSpot.")
+        return _make_session(df, filename)
+    except HTTPException:
+        raise
+    except Exception as e:
+        import traceback
+        raise HTTPException(500, traceback.format_exc())
 
 
 @app.get("/api/health")

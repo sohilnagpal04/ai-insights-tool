@@ -1,3 +1,4 @@
+import math
 import pandas as pd
 import numpy as np
 from sklearn.ensemble import IsolationForest
@@ -24,6 +25,7 @@ def analyse_csv(df: pd.DataFrame):
             summary["top_correlations"] = [
                 {"columns": f"{a} & {b}", "correlation": round(float(v), 3)}
                 for (a, b), v in top_corr.items()
+                if not math.isnan(float(v))
             ]
 
     cat_df = df.select_dtypes(include="object")
