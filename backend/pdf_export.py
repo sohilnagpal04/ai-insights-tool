@@ -12,6 +12,8 @@ from reportlab.platypus import (
 from reportlab.lib.enums import TA_LEFT, TA_CENTER
 
 # ── Colour palette (matches the dark UI accent colours) ──────────────────
+PAGE_W = A4[0] - 36 * mm  # usable width (A4 minus 18mm margins each side)
+
 CYAN   = colors.HexColor("#06b6d4")
 SLATE  = colors.HexColor("#334155")
 LIGHT  = colors.HexColor("#f1f5f9")
@@ -25,9 +27,9 @@ def _styles():
     base = getSampleStyleSheet()
     return {
         "title": ParagraphStyle("title", fontSize=22, textColor=DARK,
-                                 spaceAfter=4, fontName="Helvetica-Bold"),
+                                 leading=28, spaceAfter=0, fontName="Helvetica-Bold"),
         "subtitle": ParagraphStyle("subtitle", fontSize=11, textColor=SLATE,
-                                    spaceAfter=2, fontName="Helvetica"),
+                                    leading=14, spaceAfter=0, fontName="Helvetica"),
         "section": ParagraphStyle("section", fontSize=13, textColor=DARK,
                                    spaceBefore=14, spaceAfter=6,
                                    fontName="Helvetica-Bold"),
@@ -43,23 +45,22 @@ def _styles():
 def _stat_table(stats: list[tuple[str, str]]) -> Table:
     """Render a row of stat chips: [(label, value), ...]"""
     data = [[v for _, v in stats], [l for l, _ in stats]]
-    col_w = 38 * mm
+    col_w = PAGE_W / len(stats)
     t = Table(data, colWidths=[col_w] * len(stats))
     t.setStyle(TableStyle([
-        ("BACKGROUND",   (0, 0), (-1, 0), CYAN),
-        ("TEXTCOLOR",    (0, 0), (-1, 0), WHITE),
-        ("FONTNAME",     (0, 0), (-1, 0), "Helvetica-Bold"),
-        ("FONTSIZE",     (0, 0), (-1, 0), 16),
-        ("ALIGN",        (0, 0), (-1, -1), "CENTER"),
-        ("VALIGN",       (0, 0), (-1, -1), "MIDDLE"),
-        ("ROWBACKGROUNDS", (0, 1), (-1, 1), [LIGHT]),
-        ("TEXTCOLOR",    (0, 1), (-1, 1), SLATE),
-        ("FONTSIZE",     (0, 1), (-1, 1), 8),
-        ("FONTNAME",     (0, 1), (-1, 1), "Helvetica"),
-        ("TOPPADDING",   (0, 0), (-1, -1), 8),
-        ("BOTTOMPADDING",(0, 0), (-1, -1), 8),
-        ("GRID",         (0, 0), (-1, -1), 0.5, colors.HexColor("#e2e8f0")),
-        ("ROUNDEDCORNERS", [4]),
+        ("BACKGROUND",    (0, 0), (-1, 0), CYAN),
+        ("TEXTCOLOR",     (0, 0), (-1, 0), WHITE),
+        ("FONTNAME",      (0, 0), (-1, 0), "Helvetica-Bold"),
+        ("FONTSIZE",      (0, 0), (-1, 0), 16),
+        ("ALIGN",         (0, 0), (-1, -1), "CENTER"),
+        ("VALIGN",        (0, 0), (-1, -1), "MIDDLE"),
+        ("ROWBACKGROUNDS",(0, 1), (-1, 1), [LIGHT]),
+        ("TEXTCOLOR",     (0, 1), (-1, 1), SLATE),
+        ("FONTSIZE",      (0, 1), (-1, 1), 8),
+        ("FONTNAME",      (0, 1), (-1, 1), "Helvetica"),
+        ("TOPPADDING",    (0, 0), (-1, -1), 8),
+        ("BOTTOMPADDING", (0, 0), (-1, -1), 8),
+        ("GRID",          (0, 0), (-1, -1), 0.5, colors.HexColor("#e2e8f0")),
     ]))
     return t
 
@@ -79,7 +80,8 @@ def _numeric_table(numeric_summary: dict, styles) -> Table:
             row.append(f"{v:.2f}" if v is not None else "—")
         rows.append(row)
 
-    col_w = [52 * mm] + [22 * mm] * len(stats)
+    stat_col_w = (PAGE_W - 55 * mm) / len(stats)
+    col_w = [55 * mm] + [stat_col_w] * len(stats)
     t = Table(rows, colWidths=col_w)
     t.setStyle(TableStyle([
         ("BACKGROUND",    (0, 0), (-1, 0), DARK),
@@ -100,23 +102,26 @@ def _numeric_table(numeric_summary: dict, styles) -> Table:
 def _anomaly_table(samples: list[dict], styles) -> Table:
     if not samples:
         return Paragraph("No sample rows available.", styles["body"])
-    cols  = list(samples[0].keys())
-    header = cols
-    rows   = [header] + [[str(r.get(c, "—")) for c in cols] for r in samples]
-    col_w  = [A4[0] / len(cols) - 15 * mm / len(cols)] * len(cols)
-    t = Table(rows, colWidths=col_w)
+    cols = list(samples[0].keys())
+    col_w = PAGE_W / len(cols)
+    hdr_style  = ParagraphStyle("ah", fontSize=7, textColor=DARK,
+                                 fontName="Helvetica-Bold", leading=9)
+    cell_style = ParagraphStyle("ac", fontSize=7, textColor=SLATE,
+                                 fontName="Helvetica", leading=9)
+    header = [Paragraph(c, hdr_style) for c in cols]
+    rows = [header] + [
+        [Paragraph(str(r.get(c, "—")), cell_style) for c in cols]
+        for r in samples
+    ]
+    t = Table(rows, colWidths=[col_w] * len(cols))
     t.setStyle(TableStyle([
         ("BACKGROUND",    (0, 0), (-1, 0), AMBER),
-        ("TEXTCOLOR",     (0, 0), (-1, 0), DARK),
-        ("FONTNAME",      (0, 0), (-1, 0), "Helvetica-Bold"),
-        ("FONTNAME",      (0, 1), (-1, -1), "Helvetica"),
         ("FONTSIZE",      (0, 0), (-1, -1), 7),
         ("ROWBACKGROUNDS",(0, 1), (-1, -1), [WHITE, colors.HexColor("#fffbeb")]),
-        ("TEXTCOLOR",     (0, 1), (-1, -1), SLATE),
         ("GRID",          (0, 0), (-1, -1), 0.4, colors.HexColor("#fde68a")),
         ("TOPPADDING",    (0, 0), (-1, -1), 4),
         ("BOTTOMPADDING", (0, 0), (-1, -1), 4),
-        ("WORDWRAP",      (0, 0), (-1, -1), True),
+        ("VALIGN",        (0, 0), (-1, -1), "TOP"),
     ]))
     return t
 
@@ -132,12 +137,24 @@ def generate_pdf(filename: str, summary: dict, insights: dict | None) -> bytes:
     story = []
 
     # ── Header ────────────────────────────────────────────────────────────
-    story.append(Paragraph("AI Insights Report", S["title"]))
-    story.append(Paragraph(f"Dataset: <b>{filename}</b>", S["subtitle"]))
-    story.append(Paragraph(
-        f"Generated: {datetime.now().strftime('%d %B %Y, %H:%M')}",
-        S["subtitle"]
-    ))
+    header_table = Table(
+        [
+            [Paragraph("AI Insights Report", S["title"])],
+            [Paragraph(f"Dataset: <b>{filename}</b>", S["subtitle"])],
+            [Paragraph(f"Generated: {datetime.now().strftime('%d %B %Y, %H:%M')}", S["subtitle"])],
+        ],
+        colWidths=[PAGE_W],
+        rowHeights=[36, 18, 18],
+    )
+    header_table.setStyle(TableStyle([
+        ("TOPPADDING",    (0, 0), (-1, -1), 0),
+        ("BOTTOMPADDING", (0, 0), (-1, -1), 0),
+        ("LEFTPADDING",   (0, 0), (-1, -1), 0),
+        ("RIGHTPADDING",  (0, 0), (-1, -1), 0),
+        ("VALIGN",        (0, 0), (-1, -1), "BOTTOM"),
+    ]))
+    story.append(header_table)
+    story.append(Spacer(1, 8))
     story.append(HRFlowable(width="100%", thickness=1, color=CYAN, spaceAfter=10))
 
     # ── Stat chips ────────────────────────────────────────────────────────
@@ -216,7 +233,7 @@ def generate_pdf(filename: str, summary: dict, insights: dict | None) -> bytes:
             [c["columns"], f"{c['correlation']:.3f}"]
             for c in summary["top_correlations"]
         ]
-        t = Table(corr_data, colWidths=[120 * mm, 40 * mm])
+        t = Table(corr_data, colWidths=[PAGE_W - 44 * mm, 44 * mm])
         t.setStyle(TableStyle([
             ("BACKGROUND",    (0, 0), (-1, 0), DARK),
             ("TEXTCOLOR",     (0, 0), (-1, 0), WHITE),
